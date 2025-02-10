@@ -1,0 +1,45 @@
+/* font.css */
+@charset "utf-8";
+
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../fonts/Pretendard-ExtraBold.otf);
+   font-weight: 800;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../fonts/Pretendard-Bold.otf);
+   font-weight: 700;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../fonts/Pretendard-Medium.otf);
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../fonts/Pretendard-Regular.otf);
+   font-weight: 400;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../fonts/Pretendard-Light.otf);
+   font-weight: 300;
+}
+@font-face {
+   font-family: 'Puzzle';
+   src: url(../fonts/Hakgyoansim\ Puzzle\ OTF\ Black.otf);
+   font-weight: 700;
+}
+@font-face {
+   font-family: 'Puzzle';
+   src: url(../fonts/Hakgyoansim\ Puzzle\ OTF\ Outline.otf);
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'Ria';
+   src: url(../fonts/RiaSans-ExtraBold.ttf);
+   font-weight: 700;
+}
+
+

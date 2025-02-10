@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HYEYOON's Portfolio</title>
+   <link rel="icon" href="images/favicon_heart.png">
+   <!-- css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+   <link rel="stylesheet" href="./css/font.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <!-- swiper -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+   <!-- gsap-->
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+   <!-- js -->
+   <script defer src="./js/main.js"></script>
+</head>
+<body>
+   <div class="skip_nav">
+      <a href="#main_content">본문 바로가기</a>
+   </div>
+   <div id="wrap">
+      <header class="header" id="header">
+         <div class="logo_wrap">
+            <h1><a href="#"><img src="images/favicon_heart.png" alt="로고이미지">HWANG&nbsp;HYEYOON</a></h1>
+         </div>
+         <nav class="nav_origin">
+            <a href="#main_visual">HOME</a>
+            <a href="#about_me">ABOUT&nbsp;ME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+         </nav>
+         <div class="nav_side_wrap">
+            <button class="nav_btn"><span class="blind">메뉴 토글 버튼</span><i class="ri-menu-line"></i></button>
+            <nav class="nav_side">
+               <a href="#main_visual">HOME</a>
+               <a href="#about_me">ABOUT&nbsp;ME</a>
+               <a href="#skills">SKILLS</a>
+               <a href="#portfolio">PORTFOLIO</a>
+               <a href="#contact">CONTACT</a>
+            </nav>
+         </div>
+      </header>
+      <main id="main_content">
+         <section class="main_visual" id="main_visual">
+               <div class="main_text main_text_1">HWANG</div>
+               <div class="main_text main_text_2">HYE</div>
+               <div class="main_text main_text_3">YOON</div>
+               <div class="visual_img_box">
+                  <img Id="visual_img" src="images/main_img_1.jpg" alt="개인 사진 모음">
+               </div>
+               <div class="main_scroll">Scroll
+                  <div class="main_progress"></div>
+               </div>
+         </section>
+         <section class="about_me" id="about_me">
+            <div class="bubble_wrap">
+               <span class="bubble bubble_1"></span>
+               <span class="bubble bubble_2"></span>
+               <span class="bubble bubble_3"></span>
+               <span class="bubble bubble_4"></span>
+               <span class="bubble bubble_5"></span>
+               <span class="bubble bubble_6"></span>
+               <span class="bubble bubble_7"></span>
+               <span class="bubble bubble_8"></span>
+               <span class="bubble bubble_9"></span>
+               <span class="bubble bubble_10"></span>
+               <span class="bubble bubble_11"></span>
+            </div>
+            <div class="inner">
+               <p class="about_title"><i style="color:var(--point-color-6)" class="ri-heart-3-fill"></i><br>ABOUT<br>ME<br><i style="color:var(--point-color-6)" class="ri-heart-3-fill"></i></p>
+               <div class="about_text_wrap">
+                  <div class="about_edu">
+                     <strong class="about_text_title">Education</strong>
+                        <p>
+                           <span class="about_date">2024.11</span>UI/UX 웹 디자인 웹 퍼블리셔 프론트엔드 과정 수료
+                        </p>
+                        <p>
+                           <span class="about_date">2019.02</span>대학교(3년제) 졸업
+                        </p>
+                  </div>
+                  <div class="about_cer">
+                     <strong class="about_text_title">Certification</strong>
+                        <p><span class="about_date">2019.02</span>유통관리사 2급</p>
+                        <p><span class="about_date">2019.04</span>GTQ 1급</p>
+                        <p><span class="about_date">2019.04</span>검색광고마케터 1급</p>
+                        <p><span class="about_date">2019.04</span>워드프로세서 단일 등급</p>
+                        <p><span class="about_date">2018.07</span>운전 면허 2종 보통</p>
+                        <p><span class="about_date">2015.11&nbsp;</span>푸드 코디네이터 1급</p>
+                        <p><span class="about_date">2012.04</span>제빵기능사</p>
+                  </div>
+                  <div class="about_award">
+                     <strong class="about_text_title">Awards</strong>
+                        <p>
+                           <span class="about_date">2013</span>남양주&nbsp;슬로푸드&nbsp;전국요리경연대회&nbsp;은상
+                        </p>
+                        <p>
+                           <span class="about_date">2013</span>전국&nbsp;연&nbsp;요리&nbsp;경연대회&nbsp;우수상
+                        </p>
+                        <p>
+                           <span class="about_date">2013</span>전국&nbsp;약선요리&nbsp;전시경연대회&nbsp;금상
+                        </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="skills" id="skills">
+            <div class="skills_title_wrap">
+               <div class="skills_title">
+                  <span>SKILLS</span>
+               </div>
+               <div class="skills_title">
+                  <span>SKILLS</span>
+               </div>
+            </div>
+            <div class="skill-swiper swiper-container">
+               <div class="skill_slide_wrap swiper-wrapper">
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/HTML5_logo.png" alt="html로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        웹 페이지의 구조를 효과적으로 설계하며,<br>시맨틱 마크업을 통해 접근성과 SEO 최적화가 가능합니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/CSS3_logo.png" alt="html로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        반응형 디자인 구현이 가능하며,<br> Flexbox와 Grid를 활용하여 다양한 레이아웃을 구성할 수 있습니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/jquery_logo.png" alt="html로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        다양한 라이브러리 사용 및 JS문법을 활용하여<br>
+                        이벤트 동작에 필요한 기능을 구현합니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/JavaScript_logo.png" alt="html로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        ES6+ 문법을 활용하여 DOM 조작 및 <br>이벤트 처리를 통해 인터랙티브한 기능 구현이 가능합니다.<br>
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/react.png" alt="react 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        react의 구조를 이해하고 component를 활용한<br>
+                        간단한 게임 제작 및 페이지 제작이 가능합니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/photoshop.png" alt="react 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        포토샵 tool 사용이 가능하며 특정 상황에 맞는 <br>
+                        보정, 디자인, 편집 등이 가능합니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/illustrator.png" alt="illustrato 로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        일러스트레이터 tool 사용이 가능하며 <br>
+                        기본적인 디자인 작업이 가능합니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/Figma-logo.png" alt="figma 로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        figma tool을 활용하여 웹 프로젝트 <br>
+                        기획안 작성 및 디자인 작업이 가능합니다.
+                     </div>
+                  </div>
+                  <div class="skill_content_wrap swiper-slide">
+                     <div class="skill_img">
+                        <img src="images/Git-logo.png" alt="git 로고 이미지">
+                     </div>
+                     <div class="skill_content_text">
+                        git명령어를 이용해 gitHub를 <br>활용한 프로젝트 관리가 가능합니다.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="scroll_portfolio">
+            <div class="horizon">
+               <div class="horizon_text">
+                  <p>PORT<br>FOLIO</p>
+               </div>
+            </div>
+            <div class="verti">
+               <p>PORTFOLIO</p>
+            </div>
+         </section>
+         <section class="portfolio" id="portfolio">
+            <div class="portfolio_publishing">
+               <div class="portfolio_content_box">
+                  <div class="portfolio_content">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="portfolio_text">
+                              <strong>OB그룹</strong>
+                              <div class="port_text_title">
+                                 <p><i class="ri-check-line"></i> OB그룹 메인페이지 디자인 및 코딩</p>
+                                 <p><i class="ri-check-line"></i> 스크롤트리거 활용 및 반응형 사이트로 제작</p>
+                                 <p><i class="ri-check-line"></i>깔끔하고 시원한 분위기로 디자인</p>
+                              </div>
+                              <div class="port_tools_wrap">
+                                 <div class="port_tools_box">
+                                    <div class="port_tools_img">
+                                       <img src="./images/html_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/css_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/JavaScript_logo.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="port_percent_box">
+                                 <div class="port_percent">
+                                    <span class="bar_text">&lt; 코딩	&#47;&gt;</span>
+                                    <div class="progressbar">
+                                       <span>100%</span>
+                                       <div class="progress"></div>
+                                    </div>
+                                 </div>
+                                 <div class="port_percent">
+                                    <span class="bar_text">디자인 <i class="ri-quill-pen-line"></i></span>
+                                    <div class="progressbar">
+                                       <span>100%</span>
+                                       <div class="progress"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="portfolio_img_wrap">
+                              <div class="portfolio_scroll">
+                                 <div class="port_img_bg">스크롤하여 디자인을 확인하세요<i class="ri-bear-smile-line"></i></div>
+                                 <img class="port_img" src="images/ob_design.png" alt="ob디자인 웹 디자인 img">
+                              </div>
+                           </div>
+                           <div class="portfolio_link">
+                              <a href="https://hannah-h2y.github.io/ob/" target="_blank">웹 사이트 보기 <i class="ri-links-line"></i></a>
+                              <a href="https://github.com/hannah-h2y/ob" target="_blank">Code 확인하기 <i class="ri-code-line"></i></a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="portfolio_text">
+                              <strong>DB그룹</strong>
+                              <div class="port_text_title">
+                                 <p><i class="ri-check-line"></i> DB그룹 메인페이지 디자인 및 코딩</p>
+                                 <p><i class="ri-check-line"></i> DB그룹의 대표 색상을 활용한 깔끔한 디자인 추구</p>
+                                 <p><i class="ri-check-line"></i> 광고 영상을 메인 비주얼로 활용</p>
+                              </div>
+                              <div class="port_tools_wrap">
+                                 <div class="port_tools_box">
+                                    <div class="port_tools_img">
+                                       <img src="./images/html_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/css_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/jquery_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/JavaScript_logo.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="port_percent_box">
+                                 <div class="port_percent">
+                                    <span class="bar_text">&lt; 코딩	&#47;&gt;</span>
+                                    <div class="progressbar">
+                                       <span>100%</span>
+                                       <div class="progress"></div>
+                                    </div>
+                                 </div>
+                                 <div class="port_percent">
+                                    <span class="bar_text">디자인 <i class="ri-quill-pen-line"></i></span>
+                                    <div class="progressbar">
+                                       <span>100%</span>
+                                       <div class="progress"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="portfolio_img_wrap">
+                              <div class="portfolio_scroll">
+                                 <div class="port_img_bg">스크롤하여 디자인을 확인하세요<i class="ri-bear-smile-line"></i></div>
+                                 <img class="port_img" src="images/db_design.png" alt="db디자인 웹 디자인 img">
+                              </div>
+                           </div>
+                           <div class="portfolio_link">
+                              <a href="https://hannah-h2y.github.io/db/" target="_blank">웹 사이트 보기 <i class="ri-links-line"></i></a>
+                              <a href="https://github.com/hannah-h2y/db" target="_blank">Code 확인하기 <i class="ri-code-line"></i></a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="portfolio_text">
+                              <strong>유한<br class="portfolio_br">건강생활</strong>
+                              <div class="port_text_title">
+                                 <p><i class="ri-check-line"></i> 유한건강생활 홈페이지 클론 코딩</p>
+                                 <p><i class="ri-check-line"></i> JQuery, swiper 라이브러리 활용</p>
+                                 <p><i class="ri-check-line"></i> 기존 홈페이지와 동일하게 반응형 사이트로 제작</p>
+                              </div>
+                              <div class="port_tools_wrap">
+                                 <div class="port_tools_box">
+                                    <div class="port_tools_img">
+                                       <img src="./images/html_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/css_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/jquery_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/JavaScript_logo.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="port_percent_box">
+                                 <div class="port_percent">
+                                    <span class="bar_text">&lt; 코딩	&#47;&gt;</span>
+                                    <div class="progressbar">
+                                       <span>100%</span>
+                                       <div class="progress"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="portfolio_img_wrap">
+                              <div class="portfolio_scroll">
+                                 <div class="port_img_bg">스크롤하여 디자인을 확인하세요<i class="ri-bear-smile-line"></i></div>
+                                 <img src="images/youhancare.png" alt="유한건강생활 웹 디자인 img"></div>
+                           </div>
+                           <div class="portfolio_link">
+                              <a href=" https://hannah-h2y.github.io/yuhancare/" target="_blank">웹 사이트 보기 <i class="ri-links-line"></i></a>
+                              <a href="https://github.com/hannah-h2y/yuhancare" target="_blank">Code 확인하기 <i class="ri-code-line"></i></a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="portfolio_text">
+                              <strong style="font-size: 54px;">녹색성장<br class="portfolio_br">지속<br class="portfolio_br_1">가능<br class="portfolio_br">대학원</strong>
+                              <div class="port_text_title">
+                                 <p><i class="ri-check-line"></i> 녹색성장지속가능대학원 홈페이지 클론 코딩</p>
+                                 <p><i class="ri-check-line"></i> JQuery, swiper 라이브러리 활용</p>
+                                 <p><i class="ri-check-line"></i> 기존 홈페이지와 동일하게 반응형 사이트로 제작</p>
+                              </div>
+                              <div class="port_tools_wrap">
+                                 <div class="port_tools_box">
+                                    <div class="port_tools_img">
+                                       <img src="./images/html_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/css_tool.png" alt="">
+                                    </div>
+                                    <div class="port_tools_img">
+                                       <img src="./images/jquery_tool.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="port_percent_box">
+                                 <div class="port_percent">
+                                    <span class="bar_text">&lt; 코딩	&#47;&gt;</span>
+                                    <div class="progressbar">
+                                       <span>100%</span>
+                                       <div class="progress"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="portfolio_img_wrap">
+                              <div class="portfolio_scroll">
+                                 <div class="port_img_bg">스크롤하여 디자인을 확인하세요<i class="ri-bear-smile-line"></i></div>
+                                 <img src="images/kaist.png" alt="카이스트 웹 디자인 img"></div>
+                           </div>
+                           <div class="portfolio_link">
+                              <a href="https://hannah-h2y.github.io/kaist/" target="_blank">웹 사이트 보기 <i class="ri-links-line"></i></a>
+                              <a href="https://github.com/hannah-h2y/kaist" target="_blank">Code 확인하기 <i class="ri-code-line"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="navigation">
+                        <div class="button_prev">
+                           <img src="./images/line_left.png" alt=""></div>
+                        <div class="button_next"><img src="./images/line_right.png" alt=""></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="portfolio_label">Web publishing</div>
+            </div>
+            <div class="portfolio_design">
+               <div class="portfolio_design_title">
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+               </div>
+               <div class="design_contents_box">
+                  <div class="design_content">
+                     <a href="#">
+                        <img src="./images/port_design.png" alt="">
+                     </a>
+                  </div>
+                  <div class="design_content">
+                     <a href="#">
+                        <img src="./images/port_design.png" alt="">
+                     </a>
+                  </div>
+                  <div class="design_content">
+                     <a href="#">
+                        <img src="./images/port_design.png" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio_design_title">
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+                  <div class="design_item">
+                     <span>Design</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="contact" id="contact">
+            <div class="contact_wrap">
+               <p class="contact_text">
+                  <span>감</span>
+                  <span>각</span>
+                  <span>적</span>
+                  <span>이</span>
+                  <span>며</span>
+                  <span>&nbsp;</span>
+                  <span>사</span>
+                  <span>용</span>
+                  <span>자</span>
+                  <span>&nbsp;</span>
+                  <span>친</span>
+                  <span>화</span>
+                  <span>적</span>
+                  <span>인</span>
+                  <span>&nbsp;</span>
+                  <span>웹</span>
+                  <span>&nbsp;</span>
+                  <span>경</span>
+                  <span>험</span>
+                  <span>을</span>
+                  <span>&nbsp;</span>
+                  <span>제</span>
+                  <span>공</span>
+                  <span>하</span>
+                  <span>는</span>
+                  <span>&nbsp;</span>
+                  <span>것</span>
+                  <span>을</span>
+                  <span>&nbsp;</span>
+                  <span>목</span>
+                  <span>표</span>
+                  <span>로</span>
+                  <span>&nbsp;</span>
+                  <span>최</span>
+                  <span>선</span>
+                  <span>을</span>
+                  <span>&nbsp;</span>
+                  <span>다</span>
+                  <span>하</span>
+                  <span>겠</span>
+                  <span>습</span>
+                  <span>니</span>
+                  <span>다</span>
+                  <span>.</span>
+                  </p>
+               <div class="email_wrap">
+                  <strong>CONTACT</strong>
+                  <div class="email">
+                     <a href="mailto:h2y.hannah@gmail.com">h2y.hannah@gmail.com&nbsp;<i class="ri-mail-send-line"></i></a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="contact_bottom">
+            <button type="button">TOP</button>
+            <p class="copyright">Copyright 2024. HYEYOON all rights reserved.</p>
+         </div>
+      </footer>
+   </div>
+</body>
+</html>
