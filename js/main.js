@@ -96,17 +96,17 @@ function changeImg() {
 setInterval(changeImg, 1000);
 
 // portfolio
-// const tabBtn = document.querySelectorAll('.tab_btn')
-// const portContent = document.querySelectorAll('.portfolio_content')
+const tabBtn = document.querySelectorAll('.tab_btn')
+const portContent = document.querySelectorAll('.portfolio_content')
 
-// tabBtn.forEach((tab, index) => {
-//    tab.addEventListener('click', () => {
-//       tabBtn.forEach(tab => {tab.classList.remove('active')});
-//       tab.classList.add('active');
-//       portContent.forEach(content => {content.classList.remove('active')})
-//       portContent[index].classList.add('active');
-//    })
-// })
+tabBtn.forEach((tab, index) => {
+   tab.addEventListener('click', () => {
+      tabBtn.forEach(tab => {tab.classList.remove('active')});
+      tab.classList.add('active');
+      portContent.forEach(content => {content.classList.remove('active')})
+      portContent[index].classList.add('active');
+   })
+})
 
 
 function animateProgressBar() {
@@ -220,7 +220,7 @@ const skillSwiper = new Swiper('.skills .swiper-container', {
 })
 
 //swiper_portfolio
-const portSwiper = new Swiper('.portfolio .portfolio_content', {
+const portSwiper = new Swiper('.portfolio .swiper-pub', {
    direction: 'horizontal',
    slidePerView: 1,
    scrollbar: {
@@ -243,7 +243,62 @@ const portSwiper = new Swiper('.portfolio .portfolio_content', {
 		prevEl : '.button_prev'
 	}
 });
-
+const designSwiper = new Swiper('.swiper-design', {
+   direction: 'horizontal',
+   spaceBetween: '-73px',
+   loop: false,
+   scrollbar: {
+      draggable: true,
+   },
+   navigation: {
+      nextEl: '.button_next',
+      prevEl: '.button_prev',
+   },
+   breakpoints: {
+      768: {
+         slidesPerView: 1,
+      },
+      1024: {
+         slidesPerView: 2,
+      }
+   },
+   on: {
+      init: function() {
+         designScrollListener();
+      },
+      slideChange: function() {
+         designScrollListener();
+      }
+   }
+});
+const jsReactSwiper = new Swiper('.swiper-js', {
+   direction: 'horizontal',
+   spaceBetween: '-100px',
+   loop: false,
+   scrollbar: {
+      draggable: true,
+   },
+   navigation: {
+      nextEl: '.button_next',
+      prevEl: '.button_prev',
+   },
+   breakpoints: {
+      768: {
+         slidesPerView: 1,
+      },
+      1024: {
+         slidesPerView: 2,
+      }
+   },
+   on: {
+      init: function() {
+         designScrollListener();
+      },
+      slideChange: function() {
+         designScrollListener();
+      }
+   }
+});
 
 
 // 스크롤 트리거

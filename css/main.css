@@ -517,49 +517,70 @@ section {
 
 /* portfolio */
 .portfolio {
-   width: 100vw;
+   width: 100vw;height: 100vh;
    margin-bottom: 10%;
 }
-.portfolio .portfolio_publishing {
-   display: flex;
+.portfolio .inner {
+   display: flex;gap: 50px;
    padding: 60px 120px;
-   height: 100vh;
+   height: 100%;
 }
-
-.portfolio .portfolio_content_box {
-   width: 100%;
-   background-color: var(--point-color-1);
-   border-radius: 20px;
-   overflow: hidden;
-}
-.portfolio .portfolio_label {
-   writing-mode: vertical-lr;
-   font-size: 24px;
-   font-weight: 600;
-}
-.portfolio .portfolio_content {
-   display: flex;flex-direction: row;
-   position: relative;
-   padding: 2% 0;
-   width: 100%;height: 100%;
-   overflow: hidden;
-}
-
-.portfolio .portfolio_content .swiper-wrapper {
-   display: flex;
-}
-.portfolio .portfolio_content .swiper-slide {
-   display: flex;
-   justify-content: center;
-   padding: 0 2%;
-   gap: 5%;
-   width: 100%;height: 100%;
-}
-.portfolio .portfolio_content .portfolio_text {
+.portfolio .inner .portfolio_btn_wrap {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    justify-content: center;
+   gap: 30px;
+}
+.portfolio .inner .portfolio_btn_wrap .tab_btn {
+   position: relative;
+   font-size: 24px;
+   text-align: left;
+}
+.portfolio .inner .portfolio_btn_wrap .tab_btn.active::before {
+   content:"";
+   display: inline-block;
+   position: absolute;left: 0;bottom: 0;
+   width: 100%;
+   height: 20px;
+   background: var(--point-color-2);
+   opacity: 0.6;
+   z-index: -1;
+}
+.portfolio .inner .portfolio_btn_wrap button.active {
+   font-weight: 700;
+   z-index: 2;
+}
+.portfolio .portfolio_content_box {
+   width: 85%;
+   background-color: var(--point-color-1);
+   border-radius: 20px;
+   overflow: hidden;
+}
+.portfolio .portfolio_content {
+   display: none;flex-direction: row;
+   position: relative;
+   padding: 2% 0;
+   width: 100%;height: 100%;overflow: hidden;
+}
+.portfolio .portfolio_content.active {
+   display: flex;
+}
+.portfolio .swiper-pub .swiper-wrapper {
+   display: flex;
+}
+.portfolio .swiper-pub .swiper-slide {
+   display: flex;
+   padding: 0 2%;
+   gap: 20px;
+   width: 100%;height: 100%;
+}
+.portfolio .swiper-pub .portfolio_text {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   width: 50%;
    font-size: 16px;
 }
 .portfolio .portfolio_text .port_text_title {
@@ -575,7 +596,6 @@ section {
    font-weight: 700;
    padding-bottom: 0.1em;
 }
-.portfolio .portfolio_text .portfolio_br {display: none;}
 .portfolio .portfolio_text .port_text_title>p {
    padding-bottom: 0.25em;
    text-align: left;
@@ -636,14 +656,11 @@ section {
    background: linear-gradient(60deg, var(--point-color-3), var(--point-color-6));
    text-align: right;
 }
-.portfolio .portfolio_link {
+.portfolio .portfolio_text .portfolio_link {
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 20px;
+   gap: 50px;
 }
-.portfolio .portfolio_link a {
+.portfolio .portfolio_text .portfolio_link a {
    display: block;
    width: 180px;
    padding: 15px;
@@ -653,7 +670,7 @@ section {
    font-size: 16px;
    color: #000;
 }
-.portfolio .portfolio_link a:hover {
+.portfolio .portfolio_text .portfolio_link a:hover {
    background-color: var(--point-color-2);
    border: none;
    font-weight: 700;
@@ -662,7 +679,7 @@ section {
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 40%;height: 100%;
+   width: 50%;height: 100%;
 }
 .portfolio_img_wrap .portfolio_scroll {
    position: relative;
@@ -713,56 +730,143 @@ section {
 .navigation .button_next img, .button_prev img {
    width: 30px;
 }
-
-.portfolio_design {
-   width: 100vw;height: 100vh;
-   border: 1px solid #000;
-}
-.portfolio_design_title {
+.portfolio .swiper-design .swiper-wrapper,
+.portfolio .swiper-js .swiper-wrapper {
    display: flex;
-   padding: 3% 0;
-   animation: flow 10s linear infinite;
+   width: 100%;
+   height: 100%;
+   justify-content: flex-start;
+   align-items: center;
 }
-.design_item span {
-   font-family: "Puzzle";
-   font-weight: 700;
-   font-size: 60px;
+.portfolio .swiper-design .swiper-slide {
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 80%;width: 50%;
 }
-.portfolio_design .design_contents_box {
+.portfolio .swiper-design .web_design strong {
+   padding-bottom: 10px;
+   font-size: 35px;
+}
+.portfolio .swiper-design .web_design p {
+   font-size: 16px;
+   padding-bottom: 20px;
+}
+.portfolio .swiper-design .web_design .design_img_wrap {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80%;height: 600px;
+   margin-bottom: 30px;
+}
+.portfolio .web_design .design_img_wrap .design_scroll {
+   position: relative;
+   width: 100%;height: 100%;
+   overflow: hidden;
+}
+.design_img_wrap .design_scroll::-webkit-scrollbar {
+   width: 0;
+}
+.portfolio .web_design .design_scroll .design_img_bg {
    display: flex;
    justify-content: center;
-   gap: 5%;
+   align-items: center;
+   position: absolute;top: 0;
+   width: 100%;height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 999;
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+}
+.portfolio .web_design .design_scroll img {
+   display: flex;
+   position: absolute;top: 0;
+   object-position: top;
+   object-fit: cover;
    width: 100%;
 }
-.design_content {
-   width: 400px;height: 400px;
+.portfolio .swiper-design .web_design a {
+   display: block;
+   width: 200px;
+   padding: 15px 30px;
+   background-color: rgba(255, 255, 255, .7);
+   border-radius: 8px;
+   color: #000;
+   text-align: center;
+   font-size: 16px;
 }
-.design_content a {
-   width: 100%;height: 100%;
+.portfolio .swiper-design .web_design a:hover {
+   background-color: var(--point-color-2);
+   border: none;
+   font-weight: 700;
 }
-.design_content a>img {
-   width: 100%;height: 100%;
-   object-fit: cover;
-   object-position: top;
+.portfolio .swiper-js .swiper-slide {
+   display: flex;flex-shrink: 0;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   padding: 0 7%;
 }
-@keyframes flow {
-   from {transform: translateX(0);}
-   to {transform: translateX(-100%);}
+.portfolio .swiper-js .js_react p {
+   font-size: 16px;
+   padding-bottom: 0.5em;
 }
 
-@media screen and (max-width: 1650px) {
-   .portfolio .portfolio_content .swiper-slide {
-      gap: 3%;
-   }
-   .portfolio .portfolio_text strong {
-      font-size: 60px;
+.portfolio .swiper-js .js_react strong {
+   font-size: 40px;
+   padding-bottom: 0.5em;
+}
+.portfolio .swiper-js .js_react .js_react_img {
+   position: relative;
+   width: 100%;height: 400px;
+   margin-bottom: 10%;
+}
+.portfolio .swiper-js .js_react .js_react_img::after {
+   content: "작업중입니다.";display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;top: 0;
+   background-color: rgba(0, 0, 0, .8);
+   color: #fff;
+   font-size: 32px;
+   width: 100%;height: 100%;
+}
+.portfolio .js_react .js_react_img img {
+   display: block;
+   width: 100%;height: 100%;
+}
+.portfolio .swiper-js .js_react a {
+   display: block;
+   padding: 15px;
+   border-radius: 8px;
+   width: 180px;
+   text-align: center;
+   font-size: 16px;
+   color: #000;
+   background-color: rgba(255, 255, 255, .7);
+}
+.portfolio .js_react a:hover {
+   background-color: var(--point-color-2);
+   border: none;
+   font-weight: 700;
+}
+@media screen and (max-width: 1300px) {
+   .port_img_bg {
+      font-size: 20px;
    }
 }
 @media screen and (max-width: 1500px) {
    .portfolio {
       min-width: 1250px;
    }
-   .portfolio .portfolio_content .swiper-slide {
+   .portfolio .inner .portfolio_btn_wrap .tab_btn {
+      font-size: 20px;
+   }
+   .portfolio .swiper-pub .swiper-slide {
       padding: 0 2%;
    }
    .portfolio .portfolio_text strong {
@@ -771,27 +875,14 @@ section {
    .portfolio .portfolio_text .port_text_title>p {
       font-size: 16px;
    }
-   .portfolio .portfolio_link a {
-      width: 160px;padding: 15px;
+   .portfolio .portfolio_text .portfolio_link {
+      gap: 25px;
+   }
+   .portfolio .portfolio_text .portfolio_link a {
+      width: 160px;padding: 10px;
    }
    .navigation .button-next img, .button-prev img {
       width: 20px;
-   }
-}
-@media screen and (max-width: 1400px) {
-   .portfolio .portfolio_text strong {
-      font-size: 48px;
-   }
-   .portfolio .portfolio_text .portfolio_br {
-      display: flex;
-   }
-   .portfolio .portfolio_text .portfolio_br_1 {
-      display: none;
-   }
-}
-@media screen and (max-width: 1300px) {
-   .port_img_bg {
-      font-size: 20px;
    }
 }
 
